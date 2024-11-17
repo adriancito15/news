@@ -93,7 +93,33 @@ ul li:before {
 }
 
 /* Responsive design */
+@media (max-width: 1200px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .headline {
+        font-size: 2.4rem;
+    }
+
+    .article {
+        padding: 18px;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    ul li {
+        font-size: 1.1rem;
+    }
+}
+
 @media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
     header h1 {
         font-size: 2.5rem;
     }
@@ -116,6 +142,10 @@ ul li:before {
 }
 
 @media (max-width: 480px) {
+    body {
+        font-size: 13px;
+    }
+
     header h1 {
         font-size: 2rem;
     }
@@ -135,5 +165,8 @@ ul li:before {
     ul li {
         font-size: 1rem;
     }
-}
 
+    header p {
+        font-size: 1rem;
+    }
+}
