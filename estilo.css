@@ -1,108 +1,117 @@
-/* General Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
+/* Estilo General */
 body {
-  background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+    color: white;
 }
 
-/* Header */
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 15px 0;
+    background-color: #e74c3c;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+header h1 {
+    font-size: 3.5rem;
+    margin: 0;
 }
 
-.navbar .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
+header p {
+    font-size: 1.2rem;
 }
 
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 15px;
-}
-
-.nav-links a:hover {
-  text-decoration: underline;
-}
-
-/* Main Content */
-main {
-  background-color: #fff;
-  padding: 20px;
-}
-
+/* Container Principal */
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.news-article {
-  margin-top: 30px;
+/* Artículos y Titulos */
+.article {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
 }
 
 .headline {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
+    font-size: 3rem;
+    color: #e74c3c;
+    margin-bottom: 20px;
 }
 
-.article-date {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 20px;
+h3 {
+    font-size: 2rem;
+    color: #f39c12;
+    margin-top: 30px;
 }
 
-.article-date .author {
-  font-weight: bold;
+ul {
+    list-style-type: none;
+    padding-left: 20px;
 }
 
-section {
-  margin-bottom: 30px;
+ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
-h2 {
-  font-size: 1.8rem;
-  color: #333;
-  margin-bottom: 10px;
+/* Estilo para dispositivos pequeños */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .headline {
+        font-size: 2.5rem;
+    }
+
+    .article {
+        padding: 10px;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
 }
 
-.intro p {
-  font-size: 1.2rem;
+/* Estilo para dispositivos más pequeños como teléfonos móviles */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .headline {
+        font-size: 2rem;
+    }
+
+    .article {
+        padding: 5px;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    ul li {
+        font-size: 0.9rem;
+    }
 }
 
-.ia-features {
-  list-style-type: disc;
-  margin-left: 20px;
-  font-size: 1.1rem;
-}
-
-/* Footer */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  margin-top: 40px;
-}
